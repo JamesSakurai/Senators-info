@@ -1,9 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
+  /*padding: 10px;*/
   font-family: helvetica;
   text-align: center;
-  background-color: gainsboro;
+  /*background-color: gainsboro;*/
 }
 
 h3 {
@@ -11,7 +10,18 @@ h3 {
 }
 
 h5 {
-  margin: 6px;
+  margin: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 100%;
+  margin: 25px;
+  background-color: gainsboro;
 }
 
 #reps {

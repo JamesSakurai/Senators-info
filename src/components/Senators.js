@@ -19,11 +19,15 @@ export default class extends Component {
     const democrats = this.renderDemocrats()
     
     return (
-      <div>
-        <h1 id="reps">Republicans</h1>
-        {republicans}
-        <h1 id="dems">Democrats</h1>
-        {democrats}
+      <div class="flex-container">
+        <div>
+          <h1 id="reps">Republicans</h1>
+          {republicans}
+        </div>
+        <div>
+          <h1 id="dems">Democrats</h1>
+          {democrats}
+        </div>
       </div>
     );
   }
