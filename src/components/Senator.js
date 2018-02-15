@@ -7,12 +7,15 @@ export default class extends Component {
     
     return (
       <div>
-        <h3>Name: {senator.person.firstname} {senator.person.lastname}</h3>
-        <h5>{senator.description}</h5>
-        <h5>Phone Number: {senator.phone}</h5>
-        <h5>Start Date: {senator.startdate}</h5>
-        <h5>End Date: {senator.enddate}</h5>
-        <h5>Website: {senator.website}</h5>
+        <h3>{senator.person.firstname} {senator.person.lastname} - {senator.state}</h3>
+          <details>
+            <summary>More Info</summary>
+              <p>{senator.description}</p>
+              <p>Phone Number: {senator.phone}</p>
+              <p>Birthdate: {senator.person.birthday}</p>
+              <p>End Date: {senator.enddate}</p>
+              <p>Website: {senator.website}</p>
+          </details>
       </div>
     );
   }
