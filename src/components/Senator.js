@@ -14,7 +14,7 @@ export default class extends Component {
               <p>Phone Number: {senator.phone}</p>
               <p>Birthdate: {senator.person.birthday}</p>
               <p>End Date: {senator.enddate}</p>
-              <p>Website: {senator.website}</p>
+            <p>Website: <a href={senator.website}>{senator.website}</a></p>
           </details>
       </div>
     );
