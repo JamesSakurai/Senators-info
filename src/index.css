@@ -39,6 +39,10 @@ details summary::-webkit-details-marker {
   border-radius: 0px;
 }
 
+summary {
+  outline: none;
+}
+
 details > summary {
   color: blue;
   padding: 2px 6px;
