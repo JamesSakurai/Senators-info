@@ -13,8 +13,8 @@ export default class extends Component {
               <p>{senator.description}</p>
               <p>Phone Number: {senator.phone}</p>
               <p>Birthdate: {senator.person.birthday}</p>
-              <p>End Date: {senator.enddate}</p>
-            <p>Website: <a href={senator.website}>{senator.website}</a></p>
+              <p>Term Ends: {senator.enddate}</p>
+            <p>Website: <a href={senator.website} target="_blank">{senator.website}</a></p>
           </details>
       </div>
     );
